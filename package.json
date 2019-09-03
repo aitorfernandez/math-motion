@@ -1,0 +1,15 @@
+{
+  "name": "math-motion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aitorfernandez/math-motion.git",
+  "author": "Aitor <helloimaitor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c -w"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "rollup-watch": "^4.3.1"
+  }
+}
