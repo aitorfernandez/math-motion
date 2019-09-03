@@ -1,15 +1,20 @@
 export default (p) => {
   let rectangle
 
+  const motions = [
+    (angle, height) => (p.sin(angle) * height) / 2 + (height / 2),
+    (angle, height) => ((p.cos(angle) * p.sin(angle)) * height) / 2 + (height / 2)
+  ]
+
   function createRectangle() {
-    const height = p.height - p.random(192)
     const width = p.random(12, 72)
+    const height = p.height - p.random(192)
 
     let x = p.width
 
     function draw() {
       const angle = p.radians(p.frameCount)
-      const motion = (p.sin(angle) * height) / 2 + height / 2
+      const motion = motions[0](angle, height)
 
       x -= 1
       if (x < 0) {
