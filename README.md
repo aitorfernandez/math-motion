@@ -1,6 +1,6 @@
 # Math Motion
 
-Fun with sin, cos, pow, tan
+Fun with __sin__, __cos__, __pow__, __tan__
 
 ## Building and Run
 
