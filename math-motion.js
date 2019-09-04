@@ -43,12 +43,12 @@ export default (p) => {
     (angle) => p.pow(p.sin(angle * p.PI), 12),
     (angle) => p.pow(p.sin(angle), 3),
     (angle) => p.sin(angle - p.PI * p.tan(angle) * 0.02),
-    (angle) => p.sin(angle)
+    (angle) => p.sin(angle),
     (angle) => p.sin(angle) * p.sin(angle * 1.4),
     (angle) => p.sin(p.exp(p.cos(angle * 0.8)) * 2),
     (angle) => p.sin(p.pow(8, p.sin(angle))),
     (angle) => p.sin(p.tan(angle) * 0.06),
-    (angle) => p.sin(p.tan(p.cos(angle) * 1.2)),
+    (angle) => p.sin(p.tan(p.cos(angle) * 1.2))
   ]
 
   function createRectangle(id) {
