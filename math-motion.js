@@ -34,21 +34,21 @@ export default (p) => {
   ]
 
   const motions = [
-    (angle) => p.pow(p.abs(p.sin(angle * 2)) * 0.6, p.sin(angle * 2)) * 0.6,
+    (angle) => p.abs(p.cos(angle * 2) * p.sin(angle * 4)),
+    (angle) => p.cos(angle) * p.sin(angle),
+    (angle) => p.cos(p.sin(angle * 2) * p.sin(angle * 2)),
     (angle) => p.cos(p.sin(angle * 3) + (angle * 3)),
     (angle) => p.cos(p.sin(angle) * p.tan(angle * p.PI) * p.PI / 8),
+    (angle) => p.pow(p.abs(p.sin(angle * 2)) * 0.6, p.sin(angle * 2)) * 0.6,
     (angle) => p.pow(p.sin(angle * p.PI), 12),
+    (angle) => p.pow(p.sin(angle), 3),
     (angle) => p.sin(angle - p.PI * p.tan(angle) * 0.02),
+    (angle) => p.sin(angle)
+    (angle) => p.sin(angle) * p.sin(angle * 1.4),
     (angle) => p.sin(p.exp(p.cos(angle * 0.8)) * 2),
     (angle) => p.sin(p.pow(8, p.sin(angle))),
-    (angle) => p.cos(p.sin(angle * 2) * p.sin(angle * 2)),
     (angle) => p.sin(p.tan(angle) * 0.06),
     (angle) => p.sin(p.tan(p.cos(angle) * 1.2)),
-    (angle) => p.abs(p.cos(angle * 2) * p.sin(angle * 4)),
-    (angle) => p.sin(angle) * p.sin(angle * 1.4),
-    (angle) => p.pow(p.sin(angle), 3),
-    (angle) => p.cos(angle) * p.sin(angle),
-    (angle) => p.sin(angle)
   ]
 
   function createRectangle(id) {
